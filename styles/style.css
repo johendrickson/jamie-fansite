@@ -1,0 +1,64 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.theme1 {
+  background-color: #fce4ec;
+  color: #4a148c;
+}
+
+.theme2 {
+  background-color: #4a148c;
+  color: #fce4ec;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#counter-img {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.pusheen-img {
+  width: 200px;
+  height: auto;
+}
+
+#pusheen-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tiny-pusheen {
+  width: 100px;
+  height: auto;
+  animation: pop-in 0.4s ease-out;
+}
+
+h1 span {
+  text-decoration-line: line-through;
+}
